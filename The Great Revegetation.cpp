@@ -6,7 +6,21 @@ Topic --> DFS + Bipartiteness check
 #include <bits/stdc++.h>
 
 using namespace std;
+ // in this problem there is an weight to each edge; colour to identify weather the to connected 
+ // edge are of same color of of different color.
+ // my mistake is i am not storing the edge property
+ // so that i am goofing up on my dfs;  how should i call my dfs fron a node, I dont know my 
+ // adj_node is of same type or not;
+ // another bulender mistake is I am giving the red(1) to all my same kind of node 
+ // and treating it as already visited; but in actually this should be dynamic; all 
+ // same colur(previsolly marked as red)  can be changed to all blue during my dfs operation
+ // depending upon on from which node i am starting my dfs;
 
+
+ // my biggest bullender is the i am making my same coloure node as red and keeping is 
+ // static; kipping static is my biggest bullender on my life'
+ // I am felling very happy that i have cracked my bullender;
+ // and finally got AC
 vector<vector<pair<int,int>>> adj_list;
 vector<int> color;
 vector<bool> visited;
